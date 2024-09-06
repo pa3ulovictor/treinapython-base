@@ -2,7 +2,7 @@
 """Exibe relatório de crianças por atividade.
 
 Imprimir a lista de crianças agrupadas por sala que 
-frequentas cada uma deas atividades
+frequentas cada uma das atividades
 """
 
 __version__ = "0.1.1"

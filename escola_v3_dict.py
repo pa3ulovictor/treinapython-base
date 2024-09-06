@@ -8,6 +8,9 @@ utilizando dicionario
 
 __version__ = "0.1.2"
 
+from pprint import pprint
+
+
 #Dados
 #sala1 = ["Paulo", "Rachel", "Zoro", "Costela", "Nico"]
 escola = {
@@ -28,30 +31,56 @@ aula = {
 #Listar alunos em cada atividade por sala
 
 #Fazer de forma agrupada
+Turma ={
+        "Aula_ingles": "Ingles"
+ }
 
-atividades = [
-   ("Ingles", aula_ingles),
-   ("Musica", aula_musica),
-   ("Danca", aula_danca),
- ]
+atividades_ingles = {
+#        "Turma": Turma,
+        "Ingles": aula ["Ingles"]
+#        "Danca": aula_danca,
+ }
 
-for nome_atividade, atividade in atividades:
+atividades_musica= {
+        "Musica": aula ["Musica"]
+ }
+
+atividades_danca= {
+        "Danca": aula ["Danca"]
+ }
+
+#para_atividades = atividades_ingles["atividades_ingles"]
+
+print(
+   f"Os alunos da sala {atividades_ingles['atividades_ingles']}",
+   f"Os alunos da sala {'atividades_musica'}", 
+   f"Os alunos da sala {'atividade_danca'}",
+ )
+#pprint(
+        atividades_ingles)
+#pprint(
+          atividades_musica)
+
+#pprint(  atividades_danca
+        )
+
+#for nome_atividade, atividade in atividades:
         
 
-    print(f"Alunos da atividade {nome_atividade}" )
-    print()
+#    print(f"Alunos da atividade {nome_atividade}" )
+#    print()
     
 
 #sala1 que tem interseção com a atividade
 
 
-    atividade_sala1 = set(sala1) & set(atividade)
-    atividade_sala2 = set(sala2).intersection(set(atividade))
+#    atividade_sala1 = set(sala1) & set(atividade)
+#    atividade_sala2 = set(sala2).intersection(set(atividade))
 
-    print(f" sala1 ", atividade_sala1)
-    print(f" sala2 ", atividade_sala2)
-    print()
-    print("-" * 30)
+#    print(f" sala1 ", atividade_sala1)
+#    print(f" sala2 ", atividade_sala2)
+#   print()
+#   print("-" * 30)
 
 
 
