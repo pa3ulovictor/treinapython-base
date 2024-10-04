@@ -20,6 +20,10 @@ __author__ = "Paulo Victor"
 __licinse__ = "Unlicense"
 
 import os 
+import sys
+
+print(f"{sys.argv=}")
+
 
 current_language = os.getenv ("LANG", "en_US") [:5]
 # Aqui pegamos a linguagem até o caracter 5 
